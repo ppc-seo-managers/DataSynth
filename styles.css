@@ -103,7 +103,7 @@ body {
 }
 
 .logo-full {
-    height: 48px;
+    height: 60px;
     width: auto;
 }
 
@@ -127,7 +127,7 @@ body {
 
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
-    color: white;
+    color: #ffffff;
     padding: 0.75rem 1.75rem;
     border-radius: var(--border-radius);
     text-decoration: none;
@@ -164,7 +164,7 @@ body {
     padding: 180px 0 100px;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at top right, var(--primary-50) 0%, white 40%);
+    background: radial-gradient(circle at top right, #e0f2fe 0%, #ffffff 60%);
 }
 
 .hero-content {
@@ -197,6 +197,7 @@ body {
 .gradient-text {
     background: linear-gradient(to right, var(--primary-600), var(--accent-500));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -381,6 +382,7 @@ body {
     font-weight: 700;
     background: linear-gradient(to right, #60a5fa, #c084fc);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

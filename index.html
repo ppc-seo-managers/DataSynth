@@ -20,12 +20,12 @@
         <div class="container">
             <div class="nav-content">
                 <div class="logo-container">
-                    <img src="assets/logo-full.png" alt="DataSynth" class="logo-full">
+                    <img src="assets/plugin-logo.png" alt="DataSynth" class="logo-full">
                 </div>
                 <div class="nav-links">
                     <a href="#features">Features</a>
                     <a href="#platform">Platform</a>
-                    <a href="#contact" class="btn-primary">Join Waitlist</a>
+                    <a href="#contact" style="color:white;" class="btn-primary">Join Waitlist</a>
                 </div>
             </div>
         </div>
@@ -49,12 +49,8 @@
                     <a href="#contact" class="btn-primary btn-large">Request Access</a>
                     <a href="#features" class="btn-secondary btn-large">Explore Platform</a>
                 </div>
-                <div class="hero-notice">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm1 12H7V7h2v5zm0-6H7V4h2v2z"
-                            fill="currentColor" />
-                    </svg>
-                    <span>Currently waitlist only - <strong>14 agencies permitted this month</strong></span>
+                <div class="hero-notice" style="display: none;">
+                    <!-- Removed: Currently waitlist only - 14 agencies permitted this month -->
                 </div>
             </div>
         </div>
@@ -242,6 +238,14 @@
                     <h2>Request Early Access</h2>
                     <p>DataSynth is currently available to select agencies only. Join our waitlist to be notified when
                         we open new slots.</p>
+                    <!-- Form Disabled -->
+                    <div
+                        style="text-align: center; padding: 2rem; background: var(--gray-50); border-radius: var(--border-radius); border: 1px solid var(--gray-200);">
+                        <h3 style="color: var(--gray-900); margin-bottom: 1rem;">Early Access Frozen</h3>
+                        <p style="color: var(--gray-600);">Thank you for your interest. Due to high demand, we have
+                            frozen early access for now.</p>
+                    </div>
+                    <!--
                     <form class="waitlist-form" id="waitlistForm">
                         <div class="form-row">
                             <div class="form-group">
@@ -260,13 +264,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="clients">Number of Clients</label>
-                                <select id="clients" name="clients" required>
-                                    <option value="">Select range</option>
-                                    <option value="1-5">1-5</option>
-                                    <option value="6-15">6-15</option>
-                                    <option value="16-30">16-30</option>
-                                    <option value="30+">30+</option>
-                                </select>
+                                <input type="text" id="clients" name="clients" required placeholder="Number of clients">
                             </div>
                         </div>
                         <div class="form-group">
@@ -276,6 +274,7 @@
                         </div>
                         <button type="submit" class="btn-primary btn-large btn-full">Join Waitlist</button>
                     </form>
+                    -->
                     <div class="form-success" id="formSuccess">
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
@@ -300,7 +299,7 @@
                 </div>
                 <div class="footer-right">
                     <div class="footer-text">
-                        © 2026 DataSynth. All rights reserved.
+                        © <span id="year">2026</span> DataSynth. All rights reserved.
                     </div>
                 </div>
             </div>

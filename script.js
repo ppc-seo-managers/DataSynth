@@ -34,6 +34,7 @@ window.addEventListener('scroll', () => {
 const form = document.getElementById('waitlistForm');
 const formSuccess = document.getElementById('formSuccess');
 
+/*
 form.addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -66,11 +67,12 @@ form.addEventListener('submit', function(e) {
             console.error('Error:', error);
             alert('There was an error submitting the form. Please try again.');
         });
-    */
+    * /
     
     // For now, just show success message
     showSuccess();
 });
+*/
 
 function showSuccess() {
     // Hide form and show success message
@@ -124,3 +126,9 @@ window.addEventListener('scroll', () => {
         hero.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 });
+
+// Dynamic Year
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
